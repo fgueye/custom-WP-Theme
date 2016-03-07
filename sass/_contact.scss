@@ -1,0 +1,66 @@
+.bg-contact {
+	background: url('images/headerbg.jpg') no-repeat center; 
+	background-size: cover;
+	width: 100%;
+	.content {
+		width: 100%;
+
+		h2 {
+			font-family: $serifFont;
+			color: #fff;
+			font-size: 5rem;
+			margin-left: 5rem;
+			letter-spacing: 0.1rem;
+
+		}
+	}
+}
+
+.contactusform {
+	width: 60%;
+	padding: 2rem 10rem 3rem 5rem;
+	input, textarea {
+		width: 100%;
+		background: #000;
+		color: $lightTeal;
+		border: none;
+		font-size: 1.8rem;
+		font-weight: 100;
+		font-family: $regfont;
+		padding: 1rem;
+		margin: 2% 0;
+	}
+	textarea {
+		height: 200px;
+	}
+	button {
+		border: 1px solid $lightTeal;
+		background: none;
+		color: #fff;
+		padding: 1rem;
+		margin: 2% 0;
+		transition: all 1s;
+		&:hover {
+			color: $lightTeal;
+			background: $tealColor;
+			border: 1px solid #fff;
+
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.bg-contact .content h2 {
+		font-size: 2.3rem;
+		margin-left: 2rem;
+	}
+	.contactusform {
+	    width: 95%;
+	    padding: 2rem 0rem 3rem 1rem;
+	    button {
+	    	font-size: 1.4rem;
+	    	margin: 14% calc(50% - 27.784px);
+	    }
+	}
+}

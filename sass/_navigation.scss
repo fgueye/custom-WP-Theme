@@ -1,14 +1,151 @@
-ul.menu {
-	margin: 0;
-	padding: 0;
-	li {
-		display: inline;
-		margin-right: 10px;
+
+.front-page-header {		
+	height: 100vh;
+	position: relative;
+	h1 {
+		font-family: $regfont;
+		text-align: right;
+		text-transform: uppercase;
+		font-weight: 300;
+		
 		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			color: #fff;
+			padding: 0.2rem 0.8rem;
+			border: 1px solid $lightTeal;
+			margin: 0 2rem 0 0rem;
+			
+			&:hover {
+				color: $lightTeal;
+			}
+
+		}
+	}
+
+
+  
+
+}
+.front_nav_container {
+	width: 250px;
+	background: $opacityBkteal;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+	
+	 
+	ul.menu {
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		list-style: none;
+		li {
+			display: block;
+			margin-right: 10px;
+			a {
+				color: $lightTeal;
+				font-family: 'Lato', sans-serif;
+				padding: 10px;
+				font-size: 1.6rem;
+				font-weight: 300;
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				&:hover {
+					color: #fff;
+				}
+
+				
+				
+			}
+		}
+	}
+	
+}
+
+@media (max-width: 795px) {
+	.front_nav_container {
+		width: 150px;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.front-page-header{
+		h1 {
+			text-align: center;
+			a {
+				margin: 0;
+			}
+		}
+	}
+	.front_nav_container{
+		width: 100%;
+		left: 0;
+	    bottom: 86%;
+	    ul.menu {
+	    	display: flex;
+	    	flex-direction: row;
+    	    justify-content: space-around;
+	    	li {
+	    		margin: 0;
+	    		padding: 0;
+	    		a {
+	    			font-size: 1.4rem;
+	    			padding: 1rem;
+	    		}
+	    	}
+	    }
+	}
+	
+}
+
+.regular-header {
+	padding-top: 3rem;
+	h1 {
+		text-align: right;
+		margin: 2rem 2rem ;
+		a {
+		font-family: $regfont;
+		text-transform: uppercase;
+		font-weight: 300;
+		padding: 0.2rem;
+		border: 1px solid $lightTeal;
+
+		}
+
+	}
+
+	.nav_container {
+		ul.menu {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			list-style: none;
+			li {
+				display: block;
+				margin-right: 10px;
+				a {
+					color: $lightTeal;
+					font-family: 'Lato', sans-serif;
+					padding: 10px;
+					font-size: 1.6rem;
+					font-weight: 300;
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					&:hover {
+						color: #fff;
+					}
+
+					
+					
+				}
+			}
 		}
 	}
 }
+
+
+

@@ -1,0 +1,33 @@
+.single-post-container {
+	.post-content {
+		width: 100%;
+	    padding: 10rem;
+		div h1.entry-title  {
+			font-family: $serifFont;
+			font-style: italic;
+			font-weight: 700;
+			font-size: 3rem;
+			letter-spacing: 0.1rem;
+			color: #fff;
+			
+		}
+		.entry-content {
+			font-family: $regfont;
+			font-weight: 300;
+			color: white;
+			font-size: 1.4rem;
+			letter-spacing: 0.1rem;
+			img {
+				width: 100%;
+				height: auto;
+				margin: 2rem 0;
+			}
+
+
+		}
+
+	}
+}
+
+    
+

@@ -1,16 +1,16 @@
 <?php //index.php is the last resort template, if no other templates match ?>
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+<div class="blogs-main">
+  <div class="blog-container">
 
-    <div class="content">
+    <div class="blogPost-content">
     		<?php get_template_part( 'loop', 'index' );	?>
-    </div> <!--/.content -->
+    </div> <!--/.c -->
 
-    <?php get_sidebar(); ?>
+   
 
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+  </div> <!-- /.blogPost-content -->
+</div> <!-- /.blog-main -->
 
 <?php get_footer(); ?>

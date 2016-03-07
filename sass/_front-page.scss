@@ -1,0 +1,101 @@
+.aboutusBg {
+	background: url('images/aboutUsBG.jpg') no-repeat center; 
+	background-size: cover; 
+	position: relative;
+	padding: 10rem 3rem;
+	.aboutUs-container {
+		padding: 2rem;
+		width: 50%;
+		margin: auto;
+		background: $opacityBkteal;
+		color: #fff;
+		h2 {
+			font-family: $serifFont;
+			text-align: center;
+			font-style: normal;
+			color: $lightTeal;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			letter-spacing: 0.2rem;
+		}
+		p {
+			font-family: $regfont;
+			font-weight: 300;
+			font-size: 1.2rem;
+			letter-spacing: 0.1rem;
+		}
+
+	}
+}
+
+@media (max-width: 795px) {
+	.aboutusBg .aboutUs-container {
+		width: 70%;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.aboutusBg {
+		padding: 5rem 1rem;
+		.aboutUs-container {
+		width: 98%;
+		}
+	}
+	
+}
+
+
+section.recent-post {
+	background: $blackTeal;
+	padding: 5rem;
+			h1 {
+				color: $lightTeal;
+				font-family: $regfont;
+			}
+	.recent-post-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.text-container {
+			width: 45%;
+		}
+		h4 {
+			color: $lightTeal;
+			text-transform: uppercase;
+		}
+		
+	}
+}
+
+.text-container {
+	h2 {
+	font-family: $serifFont;
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+
+	}
+	p {
+		color: #fff;
+		font-family: $regfont;
+		font-size: 1.4rem;
+	}
+
+
+	
+}
+
+@media (max-width: 620px) {
+	section.recent-post {
+		padding: 2rem;
+		.recent-post-container {
+		flex-direction: column;
+			.text-container{
+				width: 100%;
+			}
+		}
+	}
+}
+
+

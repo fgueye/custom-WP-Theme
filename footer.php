@@ -1,6 +1,17 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="footer-container">
+    <h1>
+      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+        <?php bloginfo( 'name' ); ?>
+      </a>
+    </h1>
+    <nav>
+      <?php wp_nav_menu( array(
+      'container' => 'ul',
+      'theme_location' => 'footer_nav'
+    )); ?>
+    </nav>
+    <p>coded and designed by fgueye.com</p>
   </div>
 </footer>
 

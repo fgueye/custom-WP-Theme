@@ -1,3 +1,71 @@
 footer {
 	clear: both;
+	background: $tealColor;
+	padding: 2rem 5rem;
+	.footer-container {
+		display: flex;
+		align-items: center;
+		h1 {
+			a {
+				font-family: $regfont;
+				color: #fff;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: 300;
+				border: 1px solid $lightTeal;
+				padding: 0.4rem;
+				font-size: 1.8rem;
+				&:hover {
+					color: $lightTeal;
+
+				}
+			}
+		}
+		
+	}
+	p {
+		font-family: $regfont;
+		color: $lightTeal;
+		text-transform: uppercase;
+		justify-content: flex-end;
+	}
 }
+
+nav {
+	ul {
+		display: flex;
+		list-style: none;
+		li {
+			a {
+				font-family: $regfont;
+				text-transform: uppercase;
+				font-weight: 300;
+				color: white;
+				letter-spacing: 0.2rem;
+				padding-left: 1rem;
+				&:hover {
+					color: $lightTeal;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	footer {
+		padding: 2rem;
+		.footer-container {
+			flex-direction: column;
+		}
+		nav {
+			ul {
+				padding: 0;
+			}
+		}
+	}
+}
+
+
+
+

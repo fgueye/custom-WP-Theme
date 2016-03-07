@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
-    <div class="content">
+<div class="main-singlepage">
+  <div class="single-post-container">
+    <div class="post-content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -37,7 +37,7 @@
 
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
+   
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

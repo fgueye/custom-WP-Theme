@@ -6,10 +6,14 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
-
+@import 'partials';
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
+@import 'front-page';
+@import 'single-post';
+@import 'contact';
+@import 'blog-page';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -21,6 +25,9 @@ Default Styling
 
 img {
 	max-width: 100%;
+}
+html {
+	font-size: 62.5%;
 }
 
 body {
